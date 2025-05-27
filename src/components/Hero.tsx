@@ -42,7 +42,7 @@ Hobbies:
   };
 
   return (
-    <section id="home" className="min-h-screen pt-20 pb-16 px-4 bg-gradient-to-br from-blue-50 via-indigo-100 to-purple-200">
+    <section id="home" className="min-h-screen pt-20 pb-16 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
           <div className="flex-1 text-center lg:text-left">
