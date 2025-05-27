@@ -42,7 +42,7 @@ Hobbies:
   };
 
   return (
-    <section id="home" className="pt-20 pb-16 px-4 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
+    <section id="home" className="min-h-screen pt-20 pb-16 px-4 bg-gradient-to-br from-blue-50 via-indigo-100 to-purple-200">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
           <div className="flex-1 text-center lg:text-left">
@@ -57,11 +57,11 @@ Hobbies:
               table tennis and cricket in my free time.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700" onClick={downloadCV}>
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white" onClick={downloadCV}>
                 <Download className="mr-2 h-4 w-4" />
                 Download CV
               </Button>
-              <Button variant="outline" size="lg">
+              <Button variant="outline" size="lg" className="border-blue-600 text-blue-600 hover:bg-blue-50">
                 <Mail className="mr-2 h-4 w-4" />
                 Contact Me
               </Button>
@@ -80,11 +80,11 @@ Hobbies:
           </div>
           <div className="flex-1 max-w-md">
             <div className="relative">
-              <div className="w-80 h-80 mx-auto bg-gradient-to-br from-blue-400 to-purple-500 rounded-full flex items-center justify-center shadow-2xl">
+              <div className="w-80 h-80 mx-auto bg-gradient-to-br from-blue-400 via-purple-500 to-pink-500 rounded-full flex items-center justify-center shadow-2xl">
                 <div className="w-72 h-72 bg-white rounded-full flex items-center justify-center overflow-hidden">
                   <img 
                     src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=400&fit=crop&crop=face" 
-                    alt="Developer" 
+                    alt="Raghu Sama - Java Developer" 
                     className="w-full h-full object-cover rounded-full"
                   />
                 </div>
