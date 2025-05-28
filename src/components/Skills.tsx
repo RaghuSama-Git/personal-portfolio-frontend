@@ -1,7 +1,7 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
-import { Server, Database, Code, GitBranch } from "lucide-react";
+import { Server, Database, Code, GitBranch, Camera } from "lucide-react";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 const Skills = () => {
   const skillCategories = [
@@ -43,6 +43,24 @@ const Skills = () => {
         { name: "Docker", level: 80, color: "from-blue-500 to-indigo-500" },
         { name: "DevOps/CI/CD", level: 75, color: "from-purple-400 to-pink-500" },
       ]
+    }
+  ];
+
+  const galleryImages = [
+    {
+      url: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop",
+      alt: "Java programming on monitor",
+      title: "Backend Development"
+    },
+    {
+      url: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=600&fit=crop",
+      alt: "Circuit board technology",
+      title: "Technology Stack"
+    },
+    {
+      url: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=600&fit=crop",
+      alt: "Developer workspace",
+      title: "Development Environment"
     }
   ];
 
@@ -117,6 +135,45 @@ const Skills = () => {
                   </div>
                 ))}
               </div>
+            </CardContent>
+          </Card>
+        </div>
+
+        {/* Gallery Section */}
+        <div className="mt-16">
+          <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-xl overflow-hidden">
+            <CardHeader className="text-center">
+              <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-purple-100 to-blue-200 flex items-center justify-center">
+                <Camera className="h-8 w-8 bg-gradient-to-r from-purple-600 to-blue-800 bg-clip-text text-transparent" />
+              </div>
+              <CardTitle className="text-2xl bg-gradient-to-r from-purple-600 to-blue-800 bg-clip-text text-transparent">
+                Project Gallery
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="px-6 pb-6">
+              <Carousel className="w-full max-w-4xl mx-auto">
+                <CarouselContent>
+                  {galleryImages.map((image, index) => (
+                    <CarouselItem key={index} className="basis-full">
+                      <div className="relative group">
+                        <div className="aspect-video w-full overflow-hidden rounded-xl shadow-lg">
+                          <img 
+                            src={image.url}
+                            alt={image.alt}
+                            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                          <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <h3 className="text-xl font-semibold">{image.title}</h3>
+                          </div>
+                        </div>
+                      </div>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious className="left-4 bg-white/90 hover:bg-white border-0 shadow-lg" />
+                <CarouselNext className="right-4 bg-white/90 hover:bg-white border-0 shadow-lg" />
+              </Carousel>
             </CardContent>
           </Card>
         </div>
