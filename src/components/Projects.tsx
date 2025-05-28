@@ -13,29 +13,32 @@ const Projects = () => {
       description: "A robust e-commerce backend built with Spring Boot, featuring user authentication, product management, and order processing with MongoDB integration.",
       technologies: ["Spring Boot", "MongoDB", "JWT", "REST API"],
       githubUrl: "https://github.com/example/ecommerce-api",
-      liveUrl: "https://ecommerce-api.example.com"
+      liveUrl: "https://ecommerce-api.example.com",
+      gradient: "from-blue-500 to-cyan-500"
     },
     {
       title: "Task Management System",
       description: "A comprehensive task management application with real-time updates, built using Spring Boot and MySQL for efficient project tracking.",
       technologies: ["Spring Boot", "MySQL", "WebSocket", "JPA"],
       githubUrl: "https://github.com/example/task-manager",
-      liveUrl: "https://taskmanager.example.com"
+      liveUrl: "https://taskmanager.example.com",
+      gradient: "from-green-500 to-emerald-500"
     },
     {
       title: "Banking Application",
       description: "Secure banking application with transaction management, account handling, and fraud detection features using Spring Security.",
       technologies: ["Spring Boot", "PostgreSQL", "Spring Security", "Microservices"],
       githubUrl: "https://github.com/example/banking-app",
-      liveUrl: "https://banking.example.com"
+      liveUrl: "https://banking.example.com",
+      gradient: "from-purple-500 to-indigo-500"
     }
   ];
 
   return (
-    <section id="projects" className="py-16 px-4 bg-gray-50">
+    <section id="projects" className="py-16 px-4 bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">
             Featured Projects
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -46,9 +49,10 @@ const Projects = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {projects.map((project, index) => (
-            <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
+            <Card key={index} className="bg-white/80 backdrop-blur-sm border-0 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 overflow-hidden">
+              <div className={`h-2 bg-gradient-to-r ${project.gradient}`}></div>
               <CardHeader>
-                <CardTitle className="text-xl text-gray-900">{project.title}</CardTitle>
+                <CardTitle className="text-xl bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent">{project.title}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 mb-4">{project.description}</p>
@@ -56,7 +60,7 @@ const Projects = () => {
                   {project.technologies.map((tech, techIndex) => (
                     <span 
                       key={techIndex}
-                      className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium"
+                      className={`px-3 py-1 bg-gradient-to-r ${project.gradient} text-white rounded-full text-sm font-medium shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-200`}
                     >
                       {tech}
                     </span>
@@ -65,7 +69,7 @@ const Projects = () => {
                 <div className="flex gap-4">
                   <a 
                     href={project.githubUrl} 
-                    className="flex items-center text-gray-600 hover:text-blue-600 transition-colors"
+                    className="flex items-center text-gray-600 hover:text-indigo-600 transition-colors font-medium"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -74,7 +78,7 @@ const Projects = () => {
                   </a>
                   <a 
                     href={project.liveUrl} 
-                    className="flex items-center text-gray-600 hover:text-blue-600 transition-colors"
+                    className="flex items-center text-gray-600 hover:text-purple-600 transition-colors font-medium"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -90,9 +94,8 @@ const Projects = () => {
         <div className="text-center">
           <Button 
             size="lg" 
-            variant="outline" 
+            className="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200"
             onClick={() => navigate('/projects')}
-            className="bg-white hover:bg-gray-50"
           >
             See All Projects
           </Button>
