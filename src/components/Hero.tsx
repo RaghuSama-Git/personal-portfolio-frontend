@@ -140,23 +140,12 @@ Hobbies:
                 <div className="bg-gradient-to-br from-slate-800 to-slate-900 p-6 rounded-3xl">
                   <div className="w-80 h-80 mx-auto rounded-2xl overflow-hidden shadow-xl">
                     <img 
-                      src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=400&fit=crop&crop=face" 
+                      src="/lovable-uploads/5baefdea-45bd-485d-884f-88d62ec0caf1.png" 
                       alt="Raghu Sama - Java Developer" 
                       className="w-full h-full object-cover"
                     />
                   </div>
                 </div>
-              </div>
-
-              {/* Tech stack floating badges */}
-              <div className="absolute -top-8 right-8 bg-gradient-to-r from-orange-500 to-red-500 text-white px-3 py-1 rounded-full text-sm font-medium shadow-lg animate-bounce">
-                Java
-              </div>
-              <div className="absolute top-1/3 -left-8 bg-gradient-to-r from-green-500 to-emerald-500 text-white px-3 py-1 rounded-full text-sm font-medium shadow-lg animate-bounce delay-500">
-                Spring Boot
-              </div>
-              <div className="absolute bottom-1/4 -right-8 bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-3 py-1 rounded-full text-sm font-medium shadow-lg animate-bounce delay-1000">
-                MongoDB
               </div>
             </div>
           </div>
