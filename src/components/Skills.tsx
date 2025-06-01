@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { Server, Database, Code, GitBranch, Camera } from "lucide-react";
@@ -48,19 +49,19 @@ const Skills = () => {
 
   const galleryImages = [
     {
-      url: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop",
-      alt: "Java programming on monitor",
-      title: "Backend Development"
-    },
-    {
-      url: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=600&fit=crop",
-      alt: "Circuit board technology",
-      title: "Technology Stack"
-    },
-    {
-      url: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=600&fit=crop",
-      alt: "Developer workspace",
+      url: "/lovable-uploads/db2f6cef-9580-4732-9915-cfceec3b9746.png",
+      alt: "Raghu at work - coding workspace",
       title: "Development Environment"
+    },
+    {
+      url: "/lovable-uploads/d55ddcd8-3997-49a6-abb5-5f99eaad90e4.png",
+      alt: "Raghu - professional photo",
+      title: "Professional Profile"
+    },
+    {
+      url: "/lovable-uploads/b3a23ed1-6bfe-44f6-a8c0-3602d2a51fef.png",
+      alt: "Raghu collaborating with team",
+      title: "Team Collaboration"
     }
   ];
 

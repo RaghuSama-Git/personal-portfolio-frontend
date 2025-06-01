@@ -5,42 +5,29 @@ import { Briefcase, Calendar, MapPin } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
+      title: "Systems Engineer",
+      company: "TCS",
+      period: "2023 - Present",
+      location: "Hyderabad, India",
+      responsibilities: [
+        "Working on enterprise-level Java applications with Spring Boot framework",
+        "Developing microservices architecture for scalable backend solutions",
+        "Collaborating with cross-functional teams on large-scale projects",
+        "Implementing best practices for code quality and performance optimization",
+        "Contributing to system design and technical documentation"
+      ]
+    },
+    {
       title: "Java Developer",
-      company: "Tech Solutions Inc.",
-      period: "2022 - Present",
-      location: "Remote",
+      company: "Smart IMS",
+      period: "2020 - 2023",
+      location: "Hyderabad, India",
       responsibilities: [
-        "Developed and maintained Spring Boot applications serving 10,000+ users",
-        "Designed and implemented RESTful APIs with comprehensive documentation",
-        "Optimized database queries resulting in 40% performance improvement",
-        "Collaborated with cross-functional teams using Agile methodologies",
-        "Implemented unit and integration tests achieving 85% code coverage"
-      ]
-    },
-    {
-      title: "Junior Java Developer",
-      company: "Digital Innovations Ltd.",
-      period: "2021 - 2022",
-      location: "Hybrid",
-      responsibilities: [
-        "Built microservices using Spring Boot and Spring Cloud",
-        "Worked with MongoDB and MySQL databases for data persistence",
-        "Participated in code reviews and maintained coding standards",
-        "Assisted in system architecture design and documentation",
-        "Implemented security features using Spring Security"
-      ]
-    },
-    {
-      title: "Software Development Intern",
-      company: "StartUp Hub",
-      period: "2021",
-      location: "On-site",
-      responsibilities: [
-        "Developed small-scale Java applications for learning purposes",
-        "Gained hands-on experience with Git version control",
-        "Learned Java fundamentals and object-oriented programming",
-        "Participated in daily standups and sprint planning meetings",
-        "Created basic REST APIs and worked with JSON data"
+        "Developed and maintained Spring Boot applications for 3 years",
+        "Built RESTful APIs with comprehensive documentation and testing",
+        "Worked extensively with SQL databases and MongoDB for data management",
+        "Implemented security features using Spring Security framework",
+        "Participated in agile development processes and code reviews"
       ]
     }
   ];
@@ -53,7 +40,7 @@ const Experience = () => {
             Professional Experience
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            My journey as a Java developer over the past 3 years
+            My journey as a Java developer over the past 4 years
           </p>
         </div>
 
