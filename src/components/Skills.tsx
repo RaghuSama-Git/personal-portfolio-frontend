@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { 
   Carousel,
@@ -9,18 +10,18 @@ import {
 
 const Skills = () => {
   const skills = [
-    { name: "Java", level: "Expert" },
-    { name: "Spring Boot", level: "Expert" },
-    { name: "SQL", level: "Advanced" },
-    { name: "MongoDB", level: "Intermediate" },
-    { name: "REST APIs", level: "Expert" },
-    { name: "Microservices", level: "Advanced" },
-    { name: "Git", level: "Proficient" },
-    { name: "Docker", level: "Intermediate" },
-    { name: "AWS", level: "Basic" },
-    { name: "JavaScript", level: "Intermediate" },
-    { name: "React", level: "Basic" },
-    { name: "HTML/CSS", level: "Intermediate" },
+    "Java",
+    "Spring Boot",
+    "SQL",
+    "MongoDB",
+    "REST APIs",
+    "Microservices",
+    "Git",
+    "Docker",
+    "AWS",
+    "JavaScript",
+    "React",
+    "HTML/CSS",
   ];
 
   const galleryImages = [
@@ -55,11 +56,8 @@ const Skills = () => {
           {skills.map((skill, index) => (
             <Card key={index} className="bg-white/80 backdrop-blur-sm border-0 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-[1.01]">
               <CardHeader className="bg-gradient-to-r from-indigo-500 to-purple-500 text-white rounded-t-lg">
-                <CardTitle className="text-xl font-bold">{skill.name}</CardTitle>
+                <CardTitle className="text-xl font-bold text-center">{skill}</CardTitle>
               </CardHeader>
-              <CardContent className="p-6">
-                <p className="text-gray-700">Level: {skill.level}</p>
-              </CardContent>
             </Card>
           ))}
         </div>
