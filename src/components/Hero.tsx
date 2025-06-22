@@ -145,7 +145,7 @@ const Hero = () => {
                 <Github className="h-6 w-6" />
               </a>
               <a
-                href="https://www.linkedin.com/in/raghu-sama-89a433214/"
+                href="https://www.linkedin.com/in/raghu-sama-1403b1370/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-4 bg-white/10 backdrop-blur-md rounded-full border border-white/20 text-gray-300 hover:text-white hover:bg-white/20 hover:border-cyan-400/50 transition-all duration-200 hover:scale-110"
