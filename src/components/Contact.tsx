@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -20,8 +19,8 @@ const Contact = () => {
             Get In Touch
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            I'm always open to discussing new opportunities and interesting projects. 
-            Let's connect and explore how we can work together!
+            I'm always open to discussing new opportunities and interesting
+            projects. Let's connect and explore how we can work together!
           </p>
         </div>
 
@@ -72,28 +71,30 @@ const Contact = () => {
             {/* Quick Links */}
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg text-gray-900">Connect With Me</CardTitle>
+                <CardTitle className="text-lg text-gray-900">
+                  Connect With Me
+                </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                <a 
-                  href="https://www.linkedin.com/in/raghu-sama-89a433214/" 
-                  target="_blank" 
+                <a
+                  href="https://www.linkedin.com/in/raghu-sama-1403b1370/"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 p-3 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors"
                 >
                   <Linkedin className="h-5 w-5 text-blue-600" />
                   <span className="text-gray-700">LinkedIn</span>
                 </a>
-                <a 
-                  href="https://www.instagram.com/raghu__sama/" 
-                  target="_blank" 
+                <a
+                  href="https://www.instagram.com/raghu__sama/"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 p-3 bg-pink-50 rounded-lg hover:bg-pink-100 transition-colors"
                 >
                   <Instagram className="h-5 w-5 text-pink-600" />
                   <span className="text-gray-700">Instagram</span>
                 </a>
-                <a 
+                <a
                   href="mailto:raghusama99@gmail.com"
                   className="flex items-center gap-3 p-3 bg-green-50 rounded-lg hover:bg-green-100 transition-colors"
                 >
@@ -107,13 +108,18 @@ const Contact = () => {
           <div className="lg:col-span-2">
             <Card>
               <CardHeader>
-                <CardTitle className="text-xl text-gray-900">Send a Message</CardTitle>
+                <CardTitle className="text-xl text-gray-900">
+                  Send a Message
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                      <label
+                        htmlFor="name"
+                        className="block text-sm font-medium text-gray-700 mb-2"
+                      >
                         Name
                       </label>
                       <Input
@@ -124,7 +130,10 @@ const Contact = () => {
                       />
                     </div>
                     <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                      <label
+                        htmlFor="email"
+                        className="block text-sm font-medium text-gray-700 mb-2"
+                      >
                         Email
                       </label>
                       <Input
@@ -135,9 +144,12 @@ const Contact = () => {
                       />
                     </div>
                   </div>
-                  
+
                   <div>
-                    <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label
+                      htmlFor="subject"
+                      className="block text-sm font-medium text-gray-700 mb-2"
+                    >
                       Subject
                     </label>
                     <Input
@@ -147,9 +159,12 @@ const Contact = () => {
                       required
                     />
                   </div>
-                  
+
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label
+                      htmlFor="message"
+                      className="block text-sm font-medium text-gray-700 mb-2"
+                    >
                       Message
                     </label>
                     <Textarea
@@ -159,8 +174,12 @@ const Contact = () => {
                       required
                     />
                   </div>
-                  
-                  <Button type="submit" size="lg" className="w-full bg-blue-600 hover:bg-blue-700">
+
+                  <Button
+                    type="submit"
+                    size="lg"
+                    className="w-full bg-blue-600 hover:bg-blue-700"
+                  >
                     <Send className="mr-2 h-4 w-4" />
                     Send Message
                   </Button>
@@ -172,7 +191,8 @@ const Contact = () => {
 
         <div className="mt-12 text-center">
           <p className="text-gray-600">
-            Thank you for visiting my portfolio. I look forward to hearing from you!
+            Thank you for visiting my portfolio. I look forward to hearing from
+            you!
           </p>
         </div>
       </div>
