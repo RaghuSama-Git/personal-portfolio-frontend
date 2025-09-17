@@ -7,7 +7,7 @@ const Experience = () => {
     {
       title: "Systems Engineer",
       company: "TCS",
-      period: "2023 - Present",
+      period: "2025 April - 2025 September",
       location: "Hyderabad, India",
       responsibilities: [
         "Working on enterprise-level Java applications with Spring Boot framework",
@@ -20,7 +20,7 @@ const Experience = () => {
     {
       title: "Java Developer",
       company: "Smart IMS",
-      period: "2020 - 2023",
+      period: "2022 April - 2025 April",
       location: "Hyderabad, India",
       responsibilities: [
         "Developed and maintained Spring Boot applications for 3 years",
@@ -40,7 +40,7 @@ const Experience = () => {
             Professional Experience
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            My journey as a Java developer over the past 4 years
+            My journey as a Java developer over the past 3.5 years
           </p>
         </div>
 

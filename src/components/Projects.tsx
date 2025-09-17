@@ -8,6 +8,13 @@ const Projects = () => {
 
   const projects = [
     {
+      title: "Raghu General Stores",
+      description: "A modern e-commerce web application for a general store with product catalog, shopping cart, and order management features.",
+      technologies: ["React", "JavaScript", "CSS", "Netlify"],
+      gradient: "from-orange-500 to-red-500",
+      link: "https://raghu-generalstores.netlify.app/"
+    },
+    {
       title: "E-Commerce Backend API",
       description: "A robust e-commerce backend built with Spring Boot, featuring user authentication, product management, and order processing with MongoDB integration.",
       technologies: ["Spring Boot", "MongoDB", "JWT", "REST API"],
@@ -42,7 +49,11 @@ const Projects = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {projects.map((project, index) => (
-            <Card key={index} className="bg-white/80 backdrop-blur-sm border-0 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 overflow-hidden">
+            <Card 
+              key={index} 
+              className={`bg-white/80 backdrop-blur-sm border-0 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 overflow-hidden ${project.link ? 'cursor-pointer' : ''}`}
+              onClick={project.link ? () => window.open(project.link, '_blank') : undefined}
+            >
               <div className={`h-2 bg-gradient-to-r ${project.gradient}`}></div>
               <CardHeader>
                 <CardTitle className="text-xl bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent">{project.title}</CardTitle>

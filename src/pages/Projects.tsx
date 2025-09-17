@@ -10,6 +10,12 @@ const ProjectsPage = () => {
 
   const allProjects = [
     {
+      title: "Raghu General Stores",
+      description: "A modern e-commerce web application for a general store with product catalog, shopping cart, and order management features.",
+      technologies: ["React", "JavaScript", "CSS", "Netlify"],
+      link: "https://raghu-generalstores.netlify.app/"
+    },
+    {
       title: "E-Commerce Backend API",
       description: "A robust e-commerce backend built with Spring Boot, featuring user authentication, product management, and order processing with MongoDB integration.",
       technologies: ["Spring Boot", "MongoDB", "JWT", "REST API"]
@@ -68,7 +74,11 @@ const ProjectsPage = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {allProjects.map((project, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow duration-300 bg-white">
+              <Card 
+                key={index} 
+                className={`hover:shadow-lg transition-shadow duration-300 bg-white ${project.link ? 'cursor-pointer' : ''}`}
+                onClick={project.link ? () => window.open(project.link, '_blank') : undefined}
+              >
                 <CardHeader>
                   <CardTitle className="text-xl text-gray-900">{project.title}</CardTitle>
                 </CardHeader>
