@@ -14,33 +14,29 @@ const Contact = () => {
     setIsSubmitting(true);
 
     const formData = new FormData(e.currentTarget);
-    const name = formData.get("name") as string;
-    const email = formData.get("email") as string;
-    const subject = formData.get("subject") as string;
-    const message = formData.get("message") as string;
+    const data = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      subject: formData.get("subject"),
+      desc_message: formData.get("message"),
+    };
 
     try {
-      const { error } = await supabase
-        .from("Portfolio")
-        .insert([
-          {
-            name,
-            email,
-            subject,
-            desc_message: message,
-          },
-        ]);
+      const response = await fetch("https://general-stores-327583240542.europe-west1.run.app/getintouch/submit-details", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
 
-      if (error) {
-        console.error("Error submitting form:", error);
-        alert("Error submitting form. Please try again.");
-      } else {
-        alert("Thank you! Your message has been sent successfully.");
-        e.currentTarget.reset();
-      }
+      if (!response.ok) throw new Error("Failed to send message");
+
+      alert("Message sent successfully!");
+      e.currentTarget.reset();
     } catch (error) {
       console.error("Error:", error);
-      alert("Error submitting form. Please try again.");
+      // alert("Failed to send message. Please try again.");
     } finally {
       setIsSubmitting(false);
     }
