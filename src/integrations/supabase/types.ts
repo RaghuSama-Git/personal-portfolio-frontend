@@ -24,6 +24,7 @@ export type Database = {
           cust_phone: string | null
           id: number
           pin_code: number | null
+          user_id: string | null
         }
         Insert: {
           address?: string | null
@@ -34,6 +35,7 @@ export type Database = {
           cust_phone?: string | null
           id?: number
           pin_code?: number | null
+          user_id?: string | null
         }
         Update: {
           address?: string | null
@@ -44,6 +46,7 @@ export type Database = {
           cust_phone?: string | null
           id?: number
           pin_code?: number | null
+          user_id?: string | null
         }
         Relationships: []
       }
@@ -71,6 +74,78 @@ export type Database = {
           id?: number
           name?: string | null
           subject?: string | null
+        }
+        Relationships: []
+      }
+      profiles: {
+        Row: {
+          created_at: string
+          email: string
+          id: string
+          name: string | null
+          phone: string | null
+        }
+        Insert: {
+          created_at?: string
+          email: string
+          id: string
+          name?: string | null
+          phone?: string | null
+        }
+        Update: {
+          created_at?: string
+          email?: string
+          id?: string
+          name?: string | null
+          phone?: string | null
+        }
+        Relationships: []
+      }
+      splitBills: {
+        Row: {
+          amount: number
+          created_at: string
+          date: string | null
+          description: string | null
+          id: number
+          paidBy: string | null
+        }
+        Insert: {
+          amount: number
+          created_at?: string
+          date?: string | null
+          description?: string | null
+          id?: number
+          paidBy?: string | null
+        }
+        Update: {
+          amount?: number
+          created_at?: string
+          date?: string | null
+          description?: string | null
+          id?: number
+          paidBy?: string | null
+        }
+        Relationships: []
+      }
+      UserAuth: {
+        Row: {
+          created_at: string
+          email_id: string | null
+          id: number
+          name: string | null
+        }
+        Insert: {
+          created_at?: string
+          email_id?: string | null
+          id?: number
+          name?: string | null
+        }
+        Update: {
+          created_at?: string
+          email_id?: string | null
+          id?: number
+          name?: string | null
         }
         Relationships: []
       }
