@@ -137,7 +137,7 @@ const Hero = () => {
 
             <div className="flex gap-4 justify-center lg:justify-start">
               <a
-                href="https://github.com"
+                href="https://github.com/RaghuSama-Git"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-4 bg-white/10 backdrop-blur-md rounded-full border border-white/20 text-gray-300 hover:text-white hover:bg-white/20 hover:border-emerald-400/50 transition-all duration-200 hover:scale-110"
