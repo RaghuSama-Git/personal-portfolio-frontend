@@ -7,7 +7,7 @@ const Experience = () => {
     {
       title: "Systems Engineer",
       company: "TCS",
-      period: "2025 April - 2025 September",
+      period: "2025 April - present",
       location: "Hyderabad, India",
       responsibilities: [
         "Working on enterprise-level Java applications with Spring Boot framework",

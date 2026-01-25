@@ -8,7 +8,7 @@ import {
   Calendar,
   Instagram,
 } from "lucide-react";
-import MyResume from "../components/Assets/SamaRaghu_ Resume.pdf";
+import MyResume from "../components/Assets/SamaRaghu_Resume.pdf";
 
 const Hero = () => {
   const downloadCV = () => {
