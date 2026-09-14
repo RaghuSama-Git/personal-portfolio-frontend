@@ -30,7 +30,7 @@ const Contact = () => {
     };
 
     try {
-      const response = await fetch("https://connect-with-me-327583240542.europe-west1.run.app/getintouch/submit-details", {
+      const response = await fetch("https://connect-with-me-96400499270.europe-west2.run.app/getintouch/submit-details", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
