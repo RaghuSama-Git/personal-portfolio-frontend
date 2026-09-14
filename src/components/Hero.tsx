@@ -89,7 +89,7 @@ const Hero = () => {
                   <Calendar className="h-5 w-5" />
                   <span className="text-sm font-medium">Experience</span>
                 </div>
-                <p className="text-white font-bold text-lg">4+ Years</p>
+                <p className="text-white font-bold text-lg">4.5 Years</p>
               </div>
               <div className="bg-white/10 backdrop-blur-md rounded-xl p-5 border border-cyan-300/30 hover:border-cyan-300/50 transition-all duration-300 hover:bg-white/15">
                 <div className="flex items-center gap-3 text-cyan-300 mb-2">

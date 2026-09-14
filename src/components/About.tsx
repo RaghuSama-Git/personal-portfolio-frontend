@@ -21,7 +21,7 @@ const About = () => {
     {
       icon: Users,
       title: "Team Player",
-      description: "3 years of collaborative development experience",
+      description: "4.5 years of collaborative development experience",
       gradient: "from-purple-500 to-indigo-500",
       bgGradient: "from-purple-100 to-indigo-100"
     },
@@ -74,7 +74,7 @@ const About = () => {
           <div className="max-w-4xl mx-auto text-gray-700 leading-relaxed space-y-4">
             <div className="p-6 rounded-lg bg-gradient-to-br from-teal-50 to-cyan-50 border-l-4 border-teal-500">
               <p>
-                Over the past 3 years, I've developed a strong foundation in Java development, 
+                Over the past 4.5 years, I've developed a strong foundation in Java development, 
                 specializing in building robust backend systems using Spring Boot. My experience 
                 spans across various domains, working with both SQL and NoSQL databases.
               </p>

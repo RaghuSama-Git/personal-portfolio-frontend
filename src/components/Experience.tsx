@@ -40,10 +40,10 @@ const Experience = () => {
             Professional Experience
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            My journey as a Java developer over the past 3.5 years
+            My journey as a Java developer over the past 4.5 years
           </p>
         </div>
-
+ 
         <div className="space-y-8">
           {experiences.map((exp, index) => (
             <Card key={index} className="bg-white/80 backdrop-blur-sm border-0 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-[1.01]">
